@@ -11,7 +11,7 @@ using Microsoft.Graph;
 using Microsoft.Identity.Client;
 using System.Configuration;
 
-namespace MSGraphConsole
+namespace MicrosoftGraphConsoleApplication
 {
     public class AuthenticationHelper
     {
@@ -48,7 +48,7 @@ namespace MSGraphConsole
                                 var token = await GetTokenForUserAsync();
                                 requestMessage.Headers.Authorization = new AuthenticationHeaderValue("bearer", token);
                                 // This header has been added to identify our sample in the Microsoft Graph service.  If extracting this code for your project please remove.
-                                requestMessage.Headers.Add("SampleID", "MSGraphConsoleApp");
+                                requestMessage.Headers.Add("SampleID", "MicrosoftGraphConsoleApplicationApp");
 
                             }));
                     return graphClient;
