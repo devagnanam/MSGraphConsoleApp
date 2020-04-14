@@ -1,4 +1,4 @@
-# Microsoft Graph Console Application
+# Microsoft Graph API based Console Application
 
 This repo contains C# based console application. It uses MSAL library to connect using Azure and Office 365 tenant.
 
